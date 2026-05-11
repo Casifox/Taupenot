@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Taupenot Jean-Baptiste, paysagiste indépendant pour l’aménagement et l’entretien paysager auprès des particuliers et professionnels dans un rayon de 50 km."
+    />
+    <title>Taupenot Jean-Baptiste – Aménagement & Entretien Paysager</title>
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" aria-label="En-tête du site">
+      <nav class="nav" aria-label="Navigation principale">
+        <a class="brand" href="#accueil" aria-label="Retour à l’accueil">
+          <span class="brand__mark">TJ</span>
+          <span class="brand__text">Taupenot Jean-Baptiste</span>
+        </a>
+        <div class="nav__links">
+          <a href="#apropos">À propos</a>
+          <a href="#prestations">Prestations</a>
+          <a href="#engagements">Engagements</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="accueil" class="hero" aria-labelledby="hero-title">
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Paysagiste indépendant</p>
+          <h1 id="hero-title">Taupenot Jean-Baptiste – Aménagement & Entretien Paysager</h1>
+          <p class="hero__subtitle">
+            Intervention dans un rayon de 50 km – Particuliers &amp; Professionnels
+          </p>
+          <a class="button" href="#contact">Demander un devis</a>
+        </div>
+      </section>
+
+      <section id="apropos" class="section section--split" aria-labelledby="apropos-title">
+        <div class="section__intro">
+          <p class="eyebrow">À propos</p>
+          <h2 id="apropos-title">Un extérieur entretenu, valorisé et durable</h2>
+        </div>
+        <div class="card card--large">
+          <p>
+            Spécialisé dans l’aménagement et l’entretien paysager, je vous propose un
+            travail soigné et adapté à vos besoins. J’interviens auprès des particuliers
+            et des professionnels pour valoriser et entretenir vos extérieurs.
+          </p>
+        </div>
+      </section>
+
+      <section id="prestations" class="section" aria-labelledby="prestations-title">
+        <div class="section__heading">
+          <p class="eyebrow">Prestations</p>
+          <h2 id="prestations-title">Des services complets pour vos espaces verts</h2>
+          <p>
+            Entretien régulier, remise en état ou aménagement : chaque intervention est
+            pensée pour répondre précisément à vos attentes.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">✂️</span>
+            <h3>Taille de haies</h3>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">🌿</span>
+            <h3>Tonte de pelouse</h3>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">🌾</span>
+            <h3>Débroussaillage</h3>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">🍃</span>
+            <h3>Entretien extérieur</h3>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">🌳</span>
+            <h3>Aménagements paysagers</h3>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">🚜</span>
+            <h3>Terrassement</h3>
+          </article>
+          <article class="service-card">
+            <span class="service-card__icon" aria-hidden="true">🧱</span>
+            <h3>Petites maçonneries extérieures</h3>
+          </article>
+        </div>
+      </section>
+
+      <section id="engagements" class="section section--accent" aria-labelledby="engagements-title">
+        <div class="section__heading">
+          <p class="eyebrow">Engagement</p>
+          <h2 id="engagements-title">Une approche sérieuse et transparente</h2>
+        </div>
+        <div class="commitments">
+          <div class="commitment"><span aria-hidden="true">✓</span> Travail soigné</div>
+          <div class="commitment"><span aria-hidden="true">✓</span> Adapté à vos besoins</div>
+          <div class="commitment"><span aria-hidden="true">✓</span> Conseils personnalisés</div>
+          <div class="commitment"><span aria-hidden="true">✓</span> Tarifs sur devis</div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact" aria-labelledby="contact-title">
+        <div class="contact__content">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contact-title">Demander un devis</h2>
+          <p>
+            Décrivez votre projet ou votre besoin d’entretien. Je vous recontacte rapidement
+            pour échanger et établir une proposition adaptée.
+          </p>
+          <p class="contact__note">Tarifs sur devis – Réponse rapide</p>
+        </div>
+
+        <form class="contact-form" method="post">
+          <label for="name">Nom</label>
+          <input id="name" name="Nom" type="text" placeholder="Votre nom" required />
+
+          <label for="phone">Téléphone</label>
+          <input id="phone" name="Téléphone" type="tel" placeholder="Votre numéro" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="Email" type="email" placeholder="votre@email.fr" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="5" placeholder="Votre demande" required></textarea>
+
+          <button class="button button--form" type="submit">Envoyer la demande</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Taupenot Jean-Baptiste – Aménagement &amp; Entretien Paysager</p>
+      <p>Particuliers &amp; professionnels · Intervention dans un rayon de 50 km</p>
+    </footer>
+  </body>
+</html>
